@@ -1,79 +1,300 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Rubik+Bubbles&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:rgb(39,2,68);
+body {
+    background-color: #280345;
     color: antiquewhite;
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
-header{
+body>img {
+    position: absolute;
+    padding-top: 0;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ---------< nav section >--------------- */
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding:2rem;
+    padding: 2rem 5rem;
     list-style: none;
 }
-header > h2{
+
+header>h2 {
     font-size: 2.5rem;
     letter-spacing: 0.1rem;
     color: #FF4A60;
 }
-header> ul{
+
+header>ul {
     list-style: none;
     display: flex;
     gap: 2.2rem;
     font-size: 1.3rem;
     cursor: pointer;
 }
-header > ul > div {
+
+header>ul>div {
     position: relative;
 }
-.hiring{
+
+.hiring {
     position: absolute;
     top: 2.2rem;
     font-size: 0.8rem;
     width: 6rem;
     background-color: #705243;
-    padding: 0.2rem 0.3rem ;
+    padding: 0.2rem 0.3rem;
     border-radius: 0.9rem;
-    border: 1px solid ;
-
-    
+    border: 1px solid;
 }
 
 /* ------<hero section>------- */
-main{
+
+main {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100vw;
-    padding: 0 2rem;
+    padding: 0 5rem;
+    margin-top: 4rem;
 }
-main>img{
+
+main>div>img {
     width: 50rem;
-    position: relative;
     top: 3rem;
     left: 10rem;
+    
 }
-main h1{
+main>div>.m2{
+    position:absolute;
+    top: 13rem;
+    left: 50rem;
+
+}
+
+main h1 {
     font-size: 6.5rem;
     line-height: 8rem;
 }
-.bu > button{
+
+.bu {
     display: flex;
-    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.bu>button {
+    display: flex;
     background-color: black;
     color: white;
-    width: 9rem;
-    border-radius: 1rem;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0.6rem;
+    border: 1px solid white;
 }
-button >img {
+
+button>img {
     width: 2.5rem;
     height: 2.5rem;
+    margin: 0.5rem;
+}
+
+.bu>button>.ct>p {
+    margin-top: 0.5rem;
+}
+
+.bu>button>.ct>h3 {
+    font-size: 1.23rem;
+}
+
+/* ------------------------------------ */
+
+.marquee{
+    background-color: #380163;
+    margin: 3rem 0;
+    height: 20rem;
+    transition: fast;
+}
+.marquee>h3{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+}
+.mar1{
+    display: flex;
+}
+.mar1 >div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 5rem;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.mar2 >p{
+    text-align: center;
+    margin-top: 3rem;
+    color: #DEC2EB;
+    font-size: 1.5rem;
+}
+.mar2 >p>a{
+    color:#DEC2EB ;
+}
+/* ----------< oder section >------------ */
+
+.oder {
+    border: 3px solid #FF3A67;
+    border-radius: 2rem;
+    margin: 4.5rem 5.8rem;
+}
+
+.oder>h2 {
+    text-align: center;
+    margin-top: 3.5rem;
+    color: #DEC2EB;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    color: #FFFFFF;
+}
+
+.o1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.o2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.o2>img {
+    height: 10.2rem;
+}
+
+/* ----------< customer section >---------------- */
+
+.customer>h3 {
+    text-align: center;
+    color: #DEC2EB;
+    font-size: xx-large;
+}
+
+.customer>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin: 5rem 10rem;
+    font-size: 1.9rem;
+    
+
+}
+.customer>div>div>p{
+    margin: 2rem;
+    
+}
+.customer>div>div>h6{
+    margin: 2rem;
+    font-size: 1.9rem;
+    
+}
+.customer>div>.item1:nth-of-type(1) {
+    
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom right,#EF2D72,#7C0AB2 90%);   
+}
+
+.customer>div>.item2:nth-of-type(2) {
+    background-image: linear-gradient(to bottom right,#511382,#7C0AB2 20%);
+    border-radius: 1rem;
+}
+
+.customer>div>.item3:nth-of-type(3) {
+    background-image: linear-gradient(to bottom right,#511382,#7C0AB2 10%);
+    border-radius: 1rem;
+}
+
+.customer>div>.item4:nth-of-type(4) {
+    background-image: linear-gradient(to bottom right,#EF2D72,#7C0AB2 90%);
+    border-radius: 1rem;
+}
+
+.customer>div>.item5:nth-of-type(5) {
+    background-image: linear-gradient(to bottom right,#EF2D72,#7C0AB2 90%);
+    border-radius: 1rem;
+}
+
+/* --------------< footer section >------------------------- */
+
+footer{
+     padding:2rem 5rem;
+}
+footer>h2{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #FF4A60; 
+}
+footer>div>.flist{
+    display: flex;
+    gap: 5rem;
+    cursor: pointer;
+}
+
+footer>div>.flist>ul{
+   list-style: none;
+
+}
+footer>div>.flist>ul>li{
+    margin-top: 0.5rem;
+    font-size: 1.2rem
+}
+footer>div>.flist>ul>li>img{
+    width: 1rem;
+    height: 1rem;
+}
+footer>div{
+    display: flex;
+    justify-content: space-between;
+}
+footer>div>.fimg>img{
+    width: 20rem;
+    height: 20rem;
+    margin-right: 10rem;   
+}
+
+.flast>ul{
+    display: flex;
+     list-style: none;
+     gap: 3rem;
+     
+}
+.flast>ul>li>a{
+    color: #DEC2EB;
+}
+
+.f2{
+    position: absolute;
+    margin-top: 1rem;
+    margin-bottom: 50rem;
+    width:strach;
+    height:30rem;
+    padding-top: 0;
 }
